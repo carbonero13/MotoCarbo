@@ -1,0 +1,11 @@
+.container-products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    padding-right: .75rem;
+    padding-left: .75rem;
+    padding-bottom: .75rem;
+}
+

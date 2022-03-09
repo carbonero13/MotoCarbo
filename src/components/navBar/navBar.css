@@ -1,0 +1,84 @@
+.bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+}
+
+.bg-img-1{
+  background-image: url("https://scontent.faep24-1.fna.fbcdn.net/v/t39.30808-6/244965570_4799687023377266_4374481668568893684_n.jpg?_nc_cat=105&ccb=1-5&_nc_sid=973b4a&_nc_ohc=bWLstdhYyZAAX_j1rAq&_nc_ht=scontent.faep24-1.fna&oh=00_AT9JxI2IiRRP_Yt432kwPOmEHoP4qhFDV9Cke1tKZa3QGg&oe=622277C3");
+  min-height: 100px;
+}
+
+ .bg-img-2{
+    background-image: url("https://cabarcassarmientosas.com/wp-content/uploads/sites/5/2022/01/120120221642027534benelli-502c-banner-1536x509.jpg") !important;
+    min-height: 250px;
+  } 
+
+
+.container-topnav {
+  position: absolute;
+  margin: 20px;
+  width: auto;
+}
+
+.container-topnav-cart {
+  float: right;
+  margin: 10px 20px;
+  width: auto;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* 
+.topnav-cart {
+  overflow: hidden;
+  background-color: rgba(51, 51, 51, 0.048);
+} */
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav-img {
+
+  text-align: center;
+  padding: 0px 5px !important;
+  margin-top: 1px;
+
+}
+
+.topnav-cart a {
+  float: left;
+  /*  color: #f2f2f2; */
+  text-align: center;
+  padding: 10px 10px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #333;
+}
+
+.topnav a:hover {
+  /*   background-color: #ddd;
+  color: black; */
+  background-color: rgb(107, 107, 107);
+  color: #fff
+}
+
+.topnav-cart a:hover {
+  /* background-color: #333; */
+  background-color: #333;
+  border-radius: 50%;
+  color: #fff;
+}
