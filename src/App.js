@@ -3,11 +3,11 @@ import { NavBar } from './components/navBar/navBar';
 import { Footer } from './components/footer/footer';
 import { ItemListContainer } from './components/itemListContainer/itemListContainer';
 import { ItemDetailsContainer } from './components/itemDetailsContainer/itemDetailsContainer';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './components/home/home';
 import { CartProvider } from './context/cartContext';
 import { CartContainer } from './components/cartContainer/cartContainer';
-import {UserForm} from './components/userForm/userFom'
+import { UserForm } from './components/userForm/userFom'
 import { OrderResumeContainer } from './components/orderResumeContainer/orderResumeContainer';
 
 
@@ -18,35 +18,35 @@ export const App = () => {
     <CartProvider>
       <BrowserRouter>
         <NavBar />
-        <Switch>
-          <Route exact path="/">
-          <ItemListContainer />
+        <Routes>
+          <Route exact path="/" element={<ItemListContainer />}>
+
           </Route>
-          <Route exact path="/home">
-          <ItemListContainer />
+          <Route exact path="/home" element={<ItemListContainer />}>
+
           </Route>
-          <Route exact path="/ItemListContainer">
-            <ItemListContainer />
+          <Route exact path="/ItemListContainer" element={<ItemListContainer />}>
+
           </Route>
-          <Route path="/ItemListContainer/:categoryKey">
-            <ItemListContainer />
+          <Route path="/ItemListContainer/:categoryKey" element={<ItemListContainer />}>
+
           </Route>
-          <Route path="/ItemDetailsContainer/:productId">
-            <ItemDetailsContainer />
+          <Route path="/ItemDetailsContainer/:productId" element={<ItemListContainer />}>
+
           </Route>
-          <Route path="/cartContainer/">
-            <CartContainer />
+          <Route path="/cartContainer/" element={<CartContainer />}>
+
           </Route>
-         <Route path="/orderResumeContainer/:orderId">
-            <OrderResumeContainer />
-          </Route> 
-          <Route path="/userForm/">
-            <UserForm />
+          <Route path="/orderResumeContainer/:orderId" element={<OrderResumeContainer />}>
+
           </Route>
-          <Route path="/*">
-            <Home />
+          <Route path="/userForm/" element={<UserForm />}>
+
           </Route>
-        </Switch>
+          <Route path="/*" element={<Home />}>
+
+          </Route>
+        </Routes>
         <Footer />
       </BrowserRouter>
     </CartProvider>

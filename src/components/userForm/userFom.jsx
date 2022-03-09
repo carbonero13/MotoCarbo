@@ -4,12 +4,12 @@ import Swal from 'sweetalert2'
 import { addDoc, collection, Timestamp } from "firebase/firestore";
 import { db } from "../firebase/firebase"
 import { CartContext } from "../../context/cartContext";
-import { useHistory} from 'react-router-dom';
+import { useNavigate} from 'react-router-dom';
 
 export const UserForm = () => {
     const [datosValidos, setDatosValidos] = useState(false)
     const { costTotalCart, cartQuantityProduct, itemsCart } = useContext(CartContext);
-    let history = useHistory();
+    let navigate = useNavigate();
   /*   const [itemsOrder, setItemsOrder] = useState() */
     const [buyer, setbuyer] = useState({
         name: '',
@@ -17,6 +17,10 @@ export const UserForm = () => {
         email: '',
         email2: ''
     })
+
+    function handleClick() {
+        navigate("/orderResume/:OrderId");
+      }
 
     const handleInputChange = (event) => {
         // console.log(event.target.name)
@@ -69,7 +73,7 @@ export const UserForm = () => {
             }).then((result) => {
                
                  if (result.isConfirmed) {
-                    history.push("/orderResume/:OrderId");
+                    handleClick()
                 } 
             })
         }
