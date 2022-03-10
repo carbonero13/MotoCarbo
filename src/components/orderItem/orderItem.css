@@ -1,0 +1,29 @@
+.order-item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: space-between;
+  width: 100%;
+  text-align: center;
+  margin-top: 5px;
+    margin-bottom: 5px;
+}
+.order-item-header {
+  border-bottom: 1px dashed #fff;
+}
+
+.order-item div:nth-child(1)
+{text-align: left;
+  width: 50%
+}
+.order-item div:nth-child(2)
+{text-align: center;
+  width:10%;
+}
+.order-item div:nth-child(3)
+{
+  width: 40%;
+  text-align: right;
+}

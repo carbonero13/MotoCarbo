@@ -31,10 +31,10 @@ export const UserForm = () => {
         })
     }
 
-    useEffect(() => {
+/*     useEffect(() => {
       
         enviarDatos();
-    }, [productId]);
+    }, [productId]); */
 
     
     const enviarDatos = async (e) => {

@@ -1,39 +1,39 @@
 
-.hero-text {
+.hero-text-not {
   text-align: center;
   position: relative;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: xx-large;
-  margin-top: -450px;
+  margin-top: 200px;
 }
 
-.hero-text p{
+.hero-text-not p{
   font-size: x-large;
 }
 
-.hero-text h3{
+.hero-text-not h3{
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.btn-catalog{
+.btn-catalog-not{
   border: none;
   outline: 0;
   display: inline-block;
   padding: 25px 25px;
   color: rgb(255, 255, 255);
-  background-color: rgba(41, 41, 41, 0.486);
+  background-color: rgb(41, 41, 41);
   text-align: center;
   cursor: pointer;
   font-size: large;
   font-style: oblique;
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 25px;
 }
 
-.btn-catalog:hover {
+.btn-catalog-not:hover {
   background-color: #555;
   color: white;
 }

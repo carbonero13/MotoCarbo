@@ -12,17 +12,38 @@ export const OrderResumeContainer = () => {
 
     const { orderId } = useParams();
     const [order, setOrder] = useState();
-
+    const optionsCalendarioLargo = {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+    }
 
     useEffect(() => {
         const getOrder = async () => {
-            const docRef = doc(db, "items", orderId);
+            const docRef = doc(db, "orders", orderId);
             const dataref = await getDoc(docRef);
-            const data = { id: dataref.id, ...dataref.data() }
+            /* const data = { id: dataref.id, ...dataref.data() } */
             console.log(dataref.data().total)
-            setOrder(dataref.data().total)
+            const docData = {
+                 id: orderId, 
+                  name: dataref.data().buyer.name, 
+                  phone: dataref.data().buyer.phone, 
+                 email: dataref.data().buyer.email, 
+                 items: dataref.data().items.map((item) => ({
+                    id: item.id,
+                    title: item.title,
+                    price: item.price,
+                    quantity: item.quantity
+                  })),
+                 fechaOrder: dataref.data().fechaOrder.toDate().toLocaleDateString("es-AR", optionsCalendarioLargo), 
+                itemscount: dataref.data().itemscount,
+                total: dataref.data().total
+            };
+            console.log(docData)
+            setOrder(docData)
         }
-       
+
         getOrder();
     }, [orderId]);
 
@@ -31,7 +52,16 @@ export const OrderResumeContainer = () => {
 
     return (
         < div >
-           <OrderResume order={order} /> 
+
+            {
+                order ? (
+                    <OrderResume order={order} />
+                ) : (
+                    <h1>No se encontro orden!!!!!!</h1>
+                )
+            }
+
+
         </div >
     )
 };

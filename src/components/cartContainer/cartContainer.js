@@ -14,7 +14,7 @@ export const CartContainer = () => {
 
     return (
 
-        <div className="container-list">
+        <div className="cart-container-list">
             { itemsCart ? (
                 <Cart products={itemsCart} />
             ) : (

@@ -9,6 +9,8 @@ import { CartProvider } from './context/cartContext';
 import { CartContainer } from './components/cartContainer/cartContainer';
 import { UserForm } from './components/userForm/userFom'
 import { OrderResumeContainer } from './components/orderResumeContainer/orderResumeContainer';
+import { PageNotFound } from './components/pagenotfound/pagenotfound';
+import { OrderResumeSearch } from './components/orderResumeSearch/orderResumeSearch';
 
 
 
@@ -19,33 +21,16 @@ export const App = () => {
       <BrowserRouter>
         <NavBar />
         <Routes>
-          <Route exact path="/" element={<ItemListContainer />}>
-
-          </Route>
-          <Route exact path="/home" element={<ItemListContainer />}>
-
-          </Route>
-          <Route exact path="/ItemListContainer" element={<ItemListContainer />}>
-
-          </Route>
-          <Route path="/ItemListContainer/:categoryKey" element={<ItemListContainer />}>
-
-          </Route>
-          <Route path="/ItemDetailsContainer/:productId" element={<ItemListContainer />}>
-
-          </Route>
-          <Route path="/cartContainer/" element={<CartContainer />}>
-
-          </Route>
-          <Route path="/orderResumeContainer/:orderId" element={<OrderResumeContainer />}>
-
-          </Route>
-          <Route path="/userForm/" element={<UserForm />}>
-
-          </Route>
-          <Route path="/*" element={<Home />}>
-
-          </Route>
+          <Route exact path="/" element={<Home />}/>
+          <Route exact path="/home" element={<Home />}/>
+          <Route exact path="/ItemListContainer" element={<ItemListContainer />}/>
+          <Route path="/ItemListContainer/:categoryKey" element={<ItemListContainer />}/>
+          <Route path="/ItemDetailsContainer/:productId" element={<ItemDetailsContainer />}/>
+          <Route path="/cartContainer/" element={<CartContainer />}/>
+          <Route path="/orderResumeContainer/:orderId" element={<OrderResumeContainer />}/>
+          <Route path="/orderResumeSearch/" element={<OrderResumeSearch />}/>
+          <Route path="/userForm/" element={<UserForm />}/>
+          <Route path="/*" element={<PageNotFound />}/>
         </Routes>
         <Footer />
       </BrowserRouter>

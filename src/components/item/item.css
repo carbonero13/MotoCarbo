@@ -8,9 +8,10 @@
     position: relative;
     width: 320px;
     height: 370px;
-    background: #256497;
     
-    border-radius: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    border: 1px solid black;
     overflow: hidden;
     margin: 5px;
 }
@@ -18,11 +19,11 @@
 .card-item::before {
     content: "";
     position: absolute;
-    top: -60%;
+    top: -47%;
     width: 100%;
     height: 100%;
     background: #ffffff;
-    transform: skewY(345deg);
+   /*  transform: skewY(355deg); */
     transition: 0.5s;
 }
 
@@ -34,7 +35,9 @@
     left: 0;
     font-weight: 600;
     font-size: 6em;
-    color: rgba(0, 0, 0, 0.1);
+ /*    color: rgba(0, 0, 0, 0.1); */
+    color: rgba(255, 255, 255, 0.1);
+   
 }
 
 .card-item .imgBox-item {

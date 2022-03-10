@@ -46,6 +46,8 @@ export const CartProvider = ({ children }) => {
 
     const clearAllCart = () => {
         setItemsCart([])
+        setCostTotalCart(0)
+        setCartQuantityProduct(0)
     };
 
     const isInCart = (itemId) => {
