@@ -26,7 +26,7 @@ export const NavBar = () => {
           <Link to={`/`}>Inicio</Link>
           <Link to={`/itemListContainer`}>Motos</Link>
           <Link to={`/orderResumeSearch`}><FontAwesomeIcon icon={faSearch} /> Orden</Link>
-          <Link to={`/nosotros`}>Nosotros</Link>
+          <Link to={`/contactUs`}>Nosotros</Link>
         </div>
       </div>
       <div className="container-topnav-cart">

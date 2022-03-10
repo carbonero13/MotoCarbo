@@ -7,10 +7,10 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Home } from './components/home/home';
 import { CartProvider } from './context/cartContext';
 import { CartContainer } from './components/cartContainer/cartContainer';
-import { UserForm } from './components/userForm/userFom'
 import { OrderResumeContainer } from './components/orderResumeContainer/orderResumeContainer';
 import { PageNotFound } from './components/pagenotfound/pagenotfound';
 import { OrderResumeSearch } from './components/orderResumeSearch/orderResumeSearch';
+import { ContactUs } from './components/contactUs/contactUs';
 
 
 
@@ -29,7 +29,7 @@ export const App = () => {
           <Route path="/cartContainer/" element={<CartContainer />}/>
           <Route path="/orderResumeContainer/:orderId" element={<OrderResumeContainer />}/>
           <Route path="/orderResumeSearch/" element={<OrderResumeSearch />}/>
-          <Route path="/userForm/" element={<UserForm />}/>
+          <Route path="/contactUs/" element={<ContactUs />}/>
           <Route path="/*" element={<PageNotFound />}/>
         </Routes>
         <Footer />
