@@ -42,6 +42,7 @@ export const CartProvider = ({ children }) => {
         setItemsCart(filterCart);
         const newCostCart = costTotalCart - (quantity * price)
         setCostTotalCart(newCostCart)
+        setCartQuantityProduct(cartQuantityProduct - quantity)
     };
 
     const clearAllCart = () => {
