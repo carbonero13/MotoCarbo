@@ -3,9 +3,7 @@
 # Comisión 23230 Coderhouse.
 # Autor: Marcelo G
 
----
-
-## Modulos utilizados
+# Modulos utilizados
 
 | Modulo | Version | URL |
 | ----------- | ----------- | ----------- |
