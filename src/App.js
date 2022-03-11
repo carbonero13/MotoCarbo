@@ -8,7 +8,7 @@ import { Home } from './components/home/home';
 import { CartProvider } from './context/cartContext';
 import { CartContainer } from './components/cartContainer/cartContainer';
 import { OrderResumeContainer } from './components/orderResumeContainer/orderResumeContainer';
-import { PageNotFound } from './components/pagenotfound/pagenotfound';
+import { PageNotFound } from './components/pageNotFound/pageNotFound';
 import { OrderResumeSearch } from './components/orderResumeSearch/orderResumeSearch';
 import { ContactUs } from './components/contactUs/contactUs';
 
