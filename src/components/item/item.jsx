@@ -17,6 +17,7 @@ export const Item = ({
                     <img src={image} alt="mouse corsair" className="mouse-item" />
                 </div>
                 <div className="contentBox-item">
+              
                     <h3>{title}</h3>
                     <h2 className="price-item">$ {new Intl.NumberFormat('es-ES').format(price)}</h2>
                     <Link className="buy-item" to={`/ItemDetailsContainer/${id}`}><FontAwesomeIcon icon={faSearch} /> Detalle</Link>

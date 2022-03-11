@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  align-self: start;
+ 
   
 }
 
@@ -16,34 +16,34 @@
 
  .bg-img-2{
     background-image: url("https://imgd.aeplcdn.com/1280x720/n/cw/ec/46558/benelli-trk-502-front-right-three-quarter0.jpeg") !important;
-    min-height: 700px;
+    min-height: 600px;
   } 
 
 
   .bg-img-3{
     background-image: url("https://solomoto.es/wp-content/uploads/2021/04/Benelli-302S_12.jpg") !important;
-    min-height: 700px;
+    min-height: 600px;
   } 
 
   .bg-img-4{
     background-image: url("https://www.mdzol.com/u/fotografias/m/2021/11/15/f1456x819-1137294_1307664_5050.png") !important;
-    min-height: 700px;
+    min-height: 600px;
   } 
   .bg-img-5{
-    min-height: 700px;
+    min-height: 600px;
     background-image: url("https://www.benellimaipu.com.ar/wp-content/uploads/sites/2/2020/10/502c_slider_2-1.jpg");
   
   }
 
   .bg-img-6{
-    min-height: 700px;
+    min-height: 600px;
    
     background-image: url("https://tiendup.cdn.appdomain.cloud/business/86/metafields/5c99476dce643.jpg");
 
     
   }
   .bg-img-7{
-    min-height: 700px;
+    min-height: 600px;
     background-image: url("https://tiendup.cdn.appdomain.cloud/business/86/metafields/5c98d56c1de2e.jpg");
     
   }

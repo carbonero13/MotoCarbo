@@ -19,7 +19,7 @@ export const OrderResume = ({ order }) => {
                                     <p>Orden #{order.id} </p>
                                 </div>
                             </div>
-                            <div className="order-buyer">
+                            {/* <div className="order-buyer">
                                 <div>
                                     <p>Comprador: {order.name} </p>
                                 </div>
@@ -29,7 +29,7 @@ export const OrderResume = ({ order }) => {
                                 <div>
                                     <p>Email: {order.email} </p>
                                 </div>
-                            </div>
+                            </div> */}
 
                             <div className="order-items" >
                                 <div className="order-item order-item-header">

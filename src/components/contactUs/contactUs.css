@@ -1,0 +1,30 @@
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-around;
+    width: 100%;
+}
+
+.contact-details div {
+    margin-top: 10px;
+    color: #fff !important;
+
+}
+
+.contact-details div p {
+
+    color: #fff !important;
+
+}
+.contact-details div Link {
+
+    color: #fff !important;
+
+}
+
+.linkContact{
+    color: #fff !important;
+}
