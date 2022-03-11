@@ -11,8 +11,6 @@ export const OrderResumeSearch = () => {
 
     const [orderId, setOrderId] = useState("");
     const [order, setOrder] = useState();
-   /*  const [isSearch, setSearch] = useState(false);
-    const [error, setError] = useState(); */
     const optionsCalendarioLargo = {
         weekday: "long",
         year: "numeric",
@@ -26,14 +24,11 @@ console.log(orderId)
     }
 
     useEffect(() => {
-        console.log("UE: "+orderId + " _ "+orderId.length)
-
         if (orderId.length === 13) {
             console.log("entro a datos")
             const getOrder = async () => {
                 const docRef = doc(db, "orders", orderId);
                 const dataref = await getDoc(docRef);
-              /*   const data = { id: dataref.id, ...dataref.data() } */
                 const docData = {
                     id: orderId,
                     name: dataref.data().buyer.name,
@@ -69,14 +64,11 @@ console.log(orderId)
                 </form>
             </div>
             {
-
                 order? (
                     <OrderResume order={order} />
                 ) : (
                     <h1>Ingrese una Orden!!!!!!</h1>
                 )
-           
-        
             }
         </div >
     )

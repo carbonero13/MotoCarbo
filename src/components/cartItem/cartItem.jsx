@@ -28,7 +28,6 @@ export const CartItem = ({
       <div className="prices">
         <div className="amount">$ {new Intl.NumberFormat('es-ES').format(price)}</div>
         <div className="remove" onClick={() => removeItemCart(id,  quantity,price)}><u>Eliminar</u></div>
-
       </div>
     </div>);
 };

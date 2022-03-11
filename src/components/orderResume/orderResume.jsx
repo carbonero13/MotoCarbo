@@ -5,7 +5,6 @@ import { OrderItem } from "../orderItem/orderItem";
 
 export const OrderResume = ({ order }) => {
     console.log(order)
-    /*   let comprador=order.buyer */
     return (
         <div className="order-container-body">
             <div class="order-image">
@@ -15,7 +14,6 @@ export const OrderResume = ({ order }) => {
                             <div className="order-header">
                                 <div className="order-header-date">
                                     <p>{order.fechaOrder} </p>
-
                                 </div>
                                 <div className="order-header-orderid">
                                     <p>Orden #{order.id} </p>
@@ -49,15 +47,6 @@ export const OrderResume = ({ order }) => {
                                     order.items.map((product) => <OrderItem key={product.id} {...product} />)
                                 }
                             </div>
-                            {/*  <div className="order-resume">
-                                <div className="order-total">
-                                    <div>
-                                        <div className="order-Subtotal">Total</div>
-                                        <div className="order-items">{order.itemscount} items</div>
-                                    </div>
-                                    <div className="order-total-amount">$ {new Intl.NumberFormat('es-ES').format(order.total)}</div>
-                                </div>
-                            </div> */}
                             <div className="order-resume">
                                 <div className="order-total">
                                     <div>
@@ -72,50 +61,6 @@ export const OrderResume = ({ order }) => {
                     </div>
                 </div>
             </div>
-
-            {/*    <div className="order-container">
-                <div className="order-image">
-                    Imagen
-                </div>
-                <div className="order-details">
-                    <div className="order-header">
-                        <div className="order-header-date">
-                            <p>Fecha Compra: {order.fechaOrder} </p>
-
-                        </div>
-                        <div className="order-header-orderid">
-                            <p>Orden #{order.id} </p>
-                        </div>
-                    </div>
-                    <div className="order-buyer">
-                        <div>
-                            <p>Comprador: {order.name} </p>
-                        </div>
-                        <div>
-                            <p>Telefono: {order.phone} </p>
-                        </div>
-                        <div>
-                            <p>Email: {order.email} </p>
-                        </div>
-                    </div>
-
-                    <div className="order-items" >
-                        {
-                            order.items.map((product) => <OrderItem key={product.id} {...product} />)
-                        }
-                    </div>
-                    <div className="order-resume">
-                        <div className="total">
-                            <div>
-                                <div className="Subtotal">Total</div>
-                                <div className="items">{order.itemscount} items</div>
-                            </div>
-                            <div className="total-amount">$ {new Intl.NumberFormat('es-ES').format(order.total)}</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div> */}
         </div >
     )
 };

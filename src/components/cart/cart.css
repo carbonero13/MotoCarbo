@@ -1,9 +1,4 @@
 .Cart-Container-body {
- /*  margin: 0;
-  padding: 0; */
-  /*  background: linear-gradient(to bottom right, #E3F0FF, #FAFCFF);
- */
-  /* height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,12 +6,8 @@
   border: 1px solid black;
   border-radius: 10px;
   background-color: #ffffff;
- 
- /*  padding-bottom: 20px;  */
-/*   margin-top: 20px;
-  margin-bottom: 20px; */
   padding-right: .75rem;
-  padding-left:.75rem;
+  padding-left: .75rem;
   padding-bottom: 1.75rem;
   padding-top: 1.75rem;
   margin-right: auto;
@@ -25,17 +16,13 @@
 
 .Cart-Container {
   width: 95%;
-  /*  height: 85%; */
   background-color: #ffffff;
   border-radius: 10px;
-  /* box-shadow: 0px 25px 40px #1687d933; */
-  /* margin-top: 30px;
-  margin-bottom: 30px; */
   display: flex;
   flex-direction: row;
   border: 1px solid black;
   padding-right: .75rem;
-  padding-left:.75rem;
+  padding-left: .75rem;
   padding-bottom: .75rem;
   padding-top: .75rem;
   margin-right: auto;
@@ -44,43 +31,42 @@
 
 .container-form-1 {
   width: 30%;
- 
   padding-right: .75rem;
-  padding-left:.75rem;
+  padding-left: .75rem;
   padding-bottom: .75rem;
   padding-top: .75rem;
   margin-right: auto;
   margin-left: auto;
-  
+
 }
 
-.container-form-1 h3{
+.container-form-1 h3 {
   margin: auto;
- 
+
   text-align: center;
 }
 
-.container-form-1 p{
+.container-form-1 p {
   margin: auto;
- padding-top: 5px;
- padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
 }
+
 .container-form-2 {
   width: 69%;
- 
   padding-right: .75rem;
-  padding-left:.75rem;
+  padding-left: .75rem;
   padding-bottom: .75rem;
   padding-top: .75rem;
   margin-right: auto;
   margin-left: auto;
   height: 95%;
 }
+
 .container-form-3 {
-  width:1px;
+  width: 1px;
   border-left: 1px solid rgba(0, 0, 0, 0.692);
-  /* height: 95%; */
 }
 
 .Header {
@@ -90,15 +76,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
- /*  padding-top: 10px; */
-  /*  border-top: solid 2px black; */
- /*  border: 1px solid black; */
 }
 
 .Heading {
   font-size: 20px;
   color: #2F3841;
- /*  border: 1px solid black; */
 }
 
 .Action {
@@ -112,62 +94,47 @@
 hr {
   width: 66%;
   float: right;
-/*   margin-right: 5%; */
   border: dashed 0.5px rgb(97, 97, 97);
 
 }
 
 .checkout {
   float: right;
-/*   margin-right: 5%;
-  margin-top: 20px;
-  margin-bottom: 20px; */
   width: 50%;
-  /* border: 1px solid black; */
 }
 
 .total {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
 }
 
 .Subtotal {
   font-size: 22px;
   color: #202020;
- /*  border: 1px solid black; */
 }
 
 .items {
   font-size: 16px;
   color: #909090;
   line-height: 10px;
- /*  border: 1px solid black; */
 }
 
 .total-amount {
   font-size: 36px;
   color: #202020;
- /*  border: 1px solid black; */
 }
 
 .button-checkout {
-/*   margin-top: 5px; */
   width: 200px;
   height: 40px;
   border: none;
- /*  background: linear-gradient(to bottom right, #B8D7FF, #8EB7EB);
-  */ border-radius: 20px;
+  border-radius: 20px;
   cursor: pointer;
   font-size: 16px;
   color: #fff;
-
   background-color: green;
   margin-top: 20px;
-
-
-  /*  padding: 10px 20px 20px 20px; */
 }
 
 input[type=text],
@@ -182,18 +149,14 @@ input[type=tel] {
   background: #f1f1f1;
 }
 
-
-
 .form-row {
   margin-top: 10px;
 }
 
 .container-form-1 {
   width: 30%;
- /*  border: 1px solid green; */
 }
 
 .container-form-2 {
   width: 70%;
-  /* border: 1px solid #8EB7EB; */
 }

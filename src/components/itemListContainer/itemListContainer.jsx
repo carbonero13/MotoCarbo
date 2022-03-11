@@ -9,12 +9,10 @@ import { db } from "../firebase/firebase"
 
 export const ItemListContainer = () => {
 
-
     const { categoryKey } = useParams();
     const [products, setProducts] = useState(undefined);
     const [error, setError] = useState();
     const [isLoading, setIsloading] = useState();
-
 
     useEffect(() => {
 

@@ -1,19 +1,13 @@
 import React, { useContext } from "react";
 import './cartContainer.css';
 import { Cart } from '../cart/cart'
-
-
 import { CartContext } from "../../context/cartContext";
 
 export const CartContainer = () => {
 
-    
-    
     const { itemsCart } = useContext(CartContext)
-    
 
     return (
-
         <div className="cart-container-list">
             { itemsCart ? (
                 <Cart products={itemsCart} />

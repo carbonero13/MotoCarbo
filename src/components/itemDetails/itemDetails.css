@@ -39,7 +39,6 @@
   height: auto;
   display: flex;
   flex-direction: column;
-  /* width: 55%; */
   width:500px;
   justify-content: left;
   padding: 4%;

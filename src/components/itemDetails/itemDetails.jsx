@@ -34,7 +34,6 @@ export const ItemDetails = ({ product }) => {
                                 <h1 className="title-product">{product.title}</h1>
                                 <p>{product.description}</p>
                                 <div className="description-details">
-                                    {/*   <span className="stars-details">Ranking {product.rating.rate}</span> */}
                                     <span className="price-details">$ {new Intl.NumberFormat('es-ES').format(product.price)}</span>
                                 </div>
                                 {showButton && (

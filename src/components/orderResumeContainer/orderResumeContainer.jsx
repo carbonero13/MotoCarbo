@@ -23,7 +23,6 @@ export const OrderResumeContainer = () => {
         const getOrder = async () => {
             const docRef = doc(db, "orders", orderId);
             const dataref = await getDoc(docRef);
-            /* const data = { id: dataref.id, ...dataref.data() } */
             console.log(dataref.data().total)
             const docData = {
                  id: orderId, 
@@ -43,7 +42,6 @@ export const OrderResumeContainer = () => {
             console.log(docData)
             setOrder(docData)
         }
-
         getOrder();
     }, [orderId]);
 
@@ -52,7 +50,6 @@ export const OrderResumeContainer = () => {
 
     return (
         < div >
-
             {
                 order ? (
                     <OrderResume order={order} />
@@ -60,8 +57,6 @@ export const OrderResumeContainer = () => {
                     <h1>No se encontro orden!!!!!!</h1>
                 )
             }
-
-
         </div >
     )
 };

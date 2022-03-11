@@ -9,7 +9,6 @@ export const CartWidget = () => {
 
     const { cartQuantityProduct, itemsCart } = useContext(CartContext);
     return (
-
         <div className="contenedor-widget">
             <ul className="nav-menu">
                 <li >

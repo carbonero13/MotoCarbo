@@ -5,14 +5,10 @@ import { ItemDetails } from '../itemDetails/itemDetails'
 import { doc, getDoc } from "firebase/firestore"
 import { db } from "../firebase/firebase"
 
-
-
-
 export const ItemDetailsContainer = () => {
 
     const { productId } = useParams();
     const [product, setProduct] = useState();
-
 
     useEffect(() => {
         const getProduct = async () => {
@@ -23,9 +19,6 @@ export const ItemDetailsContainer = () => {
         }
         getProduct();
     }, [productId]);
-
-
-
 
     return (
         < div >
